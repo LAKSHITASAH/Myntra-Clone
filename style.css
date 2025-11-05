@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* ✅ NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 6%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+/* ✅ Navbar Menu */
+.navbar ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ✅ Search Box */
+.search-box input {
+    padding: 8px 12px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.icons span {
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* ✅ HERO SLIDER */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* ✅ Slider buttons */
+.slider-btns {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-btns button {
+    background: rgba(0,0,0,0.5);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+}
+
+/* ✅ CATEGORY SECTION */
+.categories {
+    padding: 40px;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.category-box {
+    width: 180px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category-box:hover {
+    transform: scale(1.05);
+}
+
+/* ✅ OFFER BANNER IMAGE */
+.offer-banner img {
+    width: 100%;
+    margin-top: 35px;
+}
+
+/* ✅ FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
